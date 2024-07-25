@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #555;
+  font-size: 1.6rem;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e6f4d2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.startgame {
+  color: #273c09;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+
+  padding: 1.6rem 3.2rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  background-color: #82c91e;
+
+  transition: all 0.3s;
+}
+
+.startgame:hover {
+  background-color: #8fce35;
+  border-color: currentColor;
+}

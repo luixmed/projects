@@ -10,8 +10,37 @@ html {
 }
 
 body {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   color: white;
 
-  background-color: #ccc;
+  max-width: 80rem;
+  min-height: 100vh;
+  margin-inline: auto;
+
+  background-color: #111;
+}
+
+/* HEADER */
+
+header {
+  background-color: #587272;
+}
+
+.header-title {
+  font-size: 2rem;
+
+  padding: 1.6rem 3.2rem;
+  border: thin solid orange;
+}
+
+/* MAIN */
+h1 {
+  font-size: 6.4rem;
+
+  padding: 1rem;
+  margin-block: 3.2rem;
+
+  background-color: #022;
+  text-shadow: 0 -2px 1px #587272;
 }

@@ -1,3 +1,56 @@
-.header-title {
-  color: red;
+/* SLIDES SHOW */
+.slides {
+  width: 100%;
+  aspect-ratio: 4/3;
+
+  outline: 5px solid red;
+
+  position: relative;
+}
+
+.slides img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Caption added with JS */
+.slides > p {
+  color: #333;
+  font-size: 3rem;
+  padding-block: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f8f8f8;
+}
+
+/* Button added with JS */
+#play-pause-btn {
+  color: white;
+  font-size: 1.6rem;
+  font-family: inherit;
+
+  width: 10rem;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  opacity: 0.2;
+  background-color: rgb(47, 79, 79);
+
+  transition: opacity 500ms;
+}
+#play-pause-btn:hover {
+  opacity: 1;
+}
+
+/* JS */
+.slides.running {
+  outline-color: greenyellow;
 }

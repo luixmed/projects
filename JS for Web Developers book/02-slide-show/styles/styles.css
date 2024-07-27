@@ -28,7 +28,7 @@ header {
 }
 
 .header-title {
-  font-size: 2rem;
+  font-size: 3.2rem;
 
   padding: 1.6rem 3.2rem;
   border: thin solid orange;
@@ -37,6 +37,7 @@ header {
 /* MAIN */
 h1 {
   font-size: 6.4rem;
+  text-align: center;
 
   padding: 1rem;
   margin-block: 3.2rem;

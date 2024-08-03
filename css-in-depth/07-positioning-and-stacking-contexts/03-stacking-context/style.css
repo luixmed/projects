@@ -1,0 +1,48 @@
+body {
+  margin: 40px;
+}
+
+.box {
+  text-align: center;
+  line-height: 200px;
+  vertical-align: top;
+
+  display: inline-block;
+  width: 200px;
+  border: 2px solid black;
+  margin-left: -60px;
+
+  background-color: #ea5;
+}
+
+.one {
+  margin-left: 0;
+}
+.two {
+  margin-top: 30px;
+}
+.three {
+  margin-top: 60px;
+}
+
+.positioned {
+  position: relative;
+  background-color: #5ae;
+  z-index: 1;
+}
+
+.absolute {
+  line-height: initial;
+
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 2em;
+
+  padding: 1em;
+  border: 2px dashed #888;
+
+  background-color: #fff;
+
+  z-index: 100;
+}

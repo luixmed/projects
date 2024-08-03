@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Align</title>
+    <style>
+      .container {
+        font-size: 16px;
+        margin-bottom: 1rem;
+        background-color: lightblue;
+      }
+
+      .middle-align {
+        vertical-align: middle;
+      }
+      .top-align {
+        vertical-align: top;
+      }
+      .bottom-align {
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      This is an image
+      <img
+        src="https://picsum.photos/id/100/200/300"
+        alt="image"
+        class="top-align"
+      />
+      aligned to the top of the text.
+    </div>
+    <div class="container">
+      This is an image
+      <img
+        src="https://picsum.photos/id/10/200/300"
+        alt="image"
+        class="middle-align"
+      />
+      aligned to the middle of the text.
+    </div>
+
+    <div class="container">
+      This is an image
+      <img
+        src="https://picsum.photos/id/500/200/300"
+        alt="image"
+        class="bottom-align"
+      />
+      aligned to the bottom of the text.
+    </div>
+  </body>
+</html>

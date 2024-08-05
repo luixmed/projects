@@ -1,0 +1,13 @@
+.button {
+  color: var(--btn-color);
+  font-family: inherit;
+
+  border: none;
+
+  background-color: var(--btn-bg);
+}
+
+.button-border:hover .button {
+  color: var(--btn-color-hover);
+  padding: 1.8rem 2.6rem;
+}

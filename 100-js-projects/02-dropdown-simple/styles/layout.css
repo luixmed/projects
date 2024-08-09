@@ -1,0 +1,41 @@
+.layout {
+  --color-border: currentColor;
+  --background-color: transparent;
+
+  --width: 100%;
+  --padding-block: 1rem;
+  --padding-inline: 2rem;
+  --border: none;
+  --border-radius: 1rem;
+
+  --display: grid;
+  --grid-template-columns: 1fr;
+  --justify-items: center;
+  --align-items: center;
+  --row-gap: 1rem;
+  --column-gap: 1rem;
+
+  display: var(--display);
+  grid-template-columns: var(--grid-template-columns);
+  justify-items: var(--justify-items);
+  align-items: var(--align-items);
+  row-gap: var(--row-gap);
+  column-gap: var(--column-gap);
+
+  width: var(--width);
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  background-color: var(--background-color);
+}
+
+.layout--3-columns {
+  --grid-template-columns: repeat(3, 1fr);
+}
+
+.layout--stats {
+  --width: fit-content;
+  --background-color: white;
+}

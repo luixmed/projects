@@ -1,0 +1,44 @@
+.menu-item {
+  --display: flex;
+  --align-items: center;
+  --justify-content: space-between;
+
+  --color: inherit;
+  --color-border: currentColor;
+  --color-background: currentColor;
+
+  --font-family: inherit;
+  --font-size: inherit;
+  --font-weight: bold;
+
+  --width: 100%;
+  --padding-block: 1rem;
+  --padding-inline: 2rem;
+  --border: 1px solid currentColor;
+  --border-radius: 1rem;
+
+  --cursor: pointer;
+
+  color: var(--color);
+  font-size: var(--font-size);
+
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+
+  cursor: var(--cursor);
+
+  /* display: var(--display);
+  align-items: var(--align-items);
+  justify-content: var(--justify-content); */
+}
+
+.menu-item--simple {
+  --padding: 0;
+  --border: none;
+  --cursor: auto;
+
+  padding: var(--padding);
+  border: var(--border);
+}

@@ -1,0 +1,35 @@
+@import "button.css";
+
+/* !DELETE */
+@import "link.css";
+@import "menu-item.css";
+@import "menu.css";
+@import "card.css";
+@import "item.css";
+@import "layout.css";
+@import "dropdown.css";
+/* !DELETE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #888;
+}

@@ -3,38 +3,49 @@
 @import "menu-item.css";
 
 .menu {
+  --color: inherit;
+  --color-border: currentColor;
+  --background-color: transparent;
+
   --width: 100%;
-  --justify-items: center;
-  --row-gap: 1rem;
-  --column-gap: 0.5rem;
-  --padding-block: 2rem;
-  --padding-inline: 3rem;
+  --padding-block: 3.2rem;
+  --padding-inline: 4.8rem;
+  --border: 1px solid currentColor;
   --border-radius: 1rem;
+  --list-style: none;
 
-  --color-background: #333;
-
-  display: grid;
-
-  margin: 0;
-  list-style: none;
-}
-
-.menu--list {
-  --padding-block: 1rem;
-  --padding-inline: 1rem;
+  --display: grid;
+  --grid-template-columns: 1fr;
+  --justify-items: center;
+  --align-items: center;
+  --row-gap: 1rem;
+  --column-gap: 1rem;
 
   width: var(--width);
   padding-block: var(--padding-block);
   padding-inline: var(--padding-inline);
+  border: var(--border);
   border-radius: var(--border-radius);
 
-  background-color: var(--color-background);
-}
+  background-color: var(--background-color);
+  list-style: var(--list-style);
 
-.menu--1-columns {
-  grid-template-columns: repeat(1, 1fr);
+  display: var(--display);
+  grid-template-columns: var(--grid-template-columns);
+  justify-items: var(--justify-items);
+  align-items: var(--align-items);
+  row-gap: var(--row-gap);
+  column-gap: var(--column-gap);
 }
 
 .menu--3-columns {
-  grid-template-columns: repeat(3, 1fr);
+  --grid-template-columns: repeat(3, 1fr);
+}
+
+.menu--select-item {
+  --padding-block: 1.6rem;
+  --padding-inline: 2rem;
+  --border: none;
+
+  --background-color: #333;
 }

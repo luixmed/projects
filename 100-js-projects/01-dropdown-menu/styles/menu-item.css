@@ -1,0 +1,48 @@
+.menu-item {
+  --justify-content: space-between;
+  --align-items: center;
+  --gap: 1rem;
+
+  --color: inherit;
+
+  --width: fit-content;
+  --padding-block: 1.6rem;
+  --padding-inline: 2rem;
+  --border-radius: 1.2rem;
+
+  --color-border: inherit;
+  --color-background: inherit;
+
+  --cursor: auto;
+
+  display: flex;
+  align-items: var(--align-items);
+
+  background-color: var(--color-background);
+}
+
+.menu-item--icon-text {
+  --color: white;
+
+  --width: 100%;
+  --padding-block: 1rem;
+  --padding-inline: 1.6rem;
+  --border-radius: 5px;
+
+  --cursor: pointer;
+
+  color: var(--color);
+
+  gap: var(--gap);
+
+  width: var(--width);
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border-radius: var(--border-radius);
+
+  cursor: var(--cursor);
+
+  &:hover {
+    --color-background: #111;
+  }
+}

@@ -1,0 +1,83 @@
+@import "dropdown-toggle.css";
+
+.dropdown {
+  --width: 100%;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.dropdown--select-item {
+  --width: 22rem;
+
+  width: var(--width);
+}
+
+.dropdown__toggle {
+  --color: inherit;
+  --color-border: currentColor;
+  --color-background: currentColor;
+
+  --font-family: inherit;
+  --font-size: 1.6rem;
+  --font-weight: bold;
+  --text-align: center;
+
+  --display: block;
+  --width: 100%;
+  --padding-block: 1rem;
+  --padding-inline: 2rem;
+  --border: none;
+  --border-radius: 1rem;
+
+  --cursor: pointer;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  position: relative;
+}
+
+.dropdown__toggle--select-item {
+  --color: white;
+
+  --padding-block: 8px;
+  --padding-inline: 1rem;
+  --border-radius: 5px;
+
+  --color-background: #111;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--color);
+  text-align: var(--text-align);
+
+  width: var(--width);
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border-radius: var(--border-radius);
+
+  background-color: var(--color-background);
+}
+
+.dropdown__carot {
+  transition: transform 0.2s;
+}
+
+.dropdown.is-open .dropdown__carot {
+  transform: rotate(-180deg);
+}
+
+.dropdown__menu {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.2s ease-in;
+
+  .dropdown.is-open & {
+    visibility: visible;
+    opacity: 1;
+  }
+}

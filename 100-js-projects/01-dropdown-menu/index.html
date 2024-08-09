@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7af3f2767.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/dropdown.js" defer></script>
+  </head>
+  <body>
+    <article class="dropdown dropdown--select-item" id="dropdown">
+      <div
+        class="dropdown__toggle dropdown__toggle--select-item"
+        id="dropdown-toggle"
+      >
+        <span>Select item</span>
+        <i class="fa-solid fa-caret-down dropdown__carot"></i>
+      </div>
+      <div class="dropdown__menu">
+        <ul class="menu menu--1-columns menu--list">
+          <li class="menu-item menu-item--icon-text">
+            <i class="fa-brands fa-facebook icon"></i>
+            <span class="menu-item__word">Facebook</span>
+          </li>
+          <li class="menu-item menu-item--icon-text">
+            <i class="fa-brands fa-instagram icon"></i>
+            <span class="menu-item__word">Instagram</span>
+          </li>
+          <li class="menu-item menu-item--icon-text">
+            <i class="fa-brands fa-telegram icon"></i>
+            <span class="menu-item__word">Telegram</span>
+          </li>
+          <li class="menu-item menu-item--icon-text">
+            <i class="fa-brands fa-github icon"></i>
+            <span class="menu-item__word">GitHub</span>
+          </li>
+          <li class="menu-item menu-item--icon-text">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <span class="menu-item__word">LinkedIn</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </body>
+</html>

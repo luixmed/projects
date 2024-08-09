@@ -1,0 +1,40 @@
+@import "icon.css";
+@import "link.css";
+@import "menu-item.css";
+
+.menu {
+  --width: 100%;
+  --justify-items: center;
+  --row-gap: 1rem;
+  --column-gap: 0.5rem;
+  --padding-block: 2rem;
+  --padding-inline: 3rem;
+  --border-radius: 1rem;
+
+  --color-background: #333;
+
+  display: grid;
+
+  margin: 0;
+  list-style: none;
+}
+
+.menu--list {
+  --padding-block: 1rem;
+  --padding-inline: 1rem;
+
+  width: var(--width);
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border-radius: var(--border-radius);
+
+  background-color: var(--color-background);
+}
+
+.menu--1-columns {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.menu--3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}

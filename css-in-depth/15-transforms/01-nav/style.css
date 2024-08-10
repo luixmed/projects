@@ -113,6 +113,18 @@ img {
     opacity: 1;
     transform: translate(0);
   }
+  .nav-links > li:nth-child(2) .nav-links__label {
+    transition-delay: 0.1s;
+  }
+  .nav-links > li:nth-child(3) .nav-links__label {
+    transition-delay: 0.2s;
+  }
+  .nav-links > li:nth-child(4) .nav-links__label {
+    transition-delay: 0.3s;
+  }
+  .nav-links > li:nth-child(5) .nav-links__label {
+    transition-delay: 0.4s;
+  }
   .nav-links__icon {
     transition: transform 0.2s ease-out;
   }

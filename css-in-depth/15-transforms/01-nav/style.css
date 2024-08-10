@@ -69,3 +69,35 @@ img {
 .nav-links > li > a:hover {
   color: hsl(40, 100%, 70%);
 }
+
+@media (min-width: 30em) {
+  .main-nav {
+    position: fixed;
+    top: 8.25rem;
+    left: 0;
+    z-index: 10;
+
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: transparent;
+
+    transition: background-color 0.5s linear;
+  }
+  .main-nav:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+/* ... */
+@media (min-width: 30em) {
+  .nav-links {
+    display: block;
+    padding: 1em;
+    margin-bottom: 0;
+  }
+  .nav-links > li + li {
+    margin-left: 0;
+  }
+  .nav-links__label {
+    margin-left: 1em;
+  }
+}

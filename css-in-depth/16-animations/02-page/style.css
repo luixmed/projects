@@ -137,6 +137,19 @@ img {
 .flyin-grid {
   margin: 0 1rem;
 }
+@media (min-width: 30em) {
+  .flyin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+  }
+  .flyin-grid__item {
+    flex: 1 1 300px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    max-width: 600px;
+  }
+}
 .card {
   color: hsl(210, 15%, 20%);
 

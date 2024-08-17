@@ -1,0 +1,46 @@
+body {
+  padding: 2rem;
+  background-color: #bbb;
+}
+
+.fade {
+  height: 400px;
+  /* width: 400px; */
+  border-radius: 0.3em;
+
+  background-image: linear-gradient(
+    to right,
+    white,
+    blue
+  ); /* Fades to the right from white to blue */
+  background-image: linear-gradient(
+    90deg,
+    white,
+    blue
+  ); /* 90deg value is equivalent to the value to right */
+  background-image: linear-gradient(
+    90deg,
+    red,
+    white,
+    blue
+  ); /* Specifies multiple color stops */
+  background-image: linear-gradient(90deg, red 0%, white 50%, blue 100%);
+  background-image: linear-gradient(
+    90deg,
+    red 40%,
+    white 40%,
+    white 60%,
+    blue 60%
+  ); /*Color stops on the same points*/
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #57b,
+    #57b 10px,
+    #148 10px,
+    #148 20px
+  ); /*Stripes alternating between light and dark blue*/
+  background-image: radial-gradient(
+    white,
+    blue
+  ); /*Blends from a white center to blue edges*/
+}

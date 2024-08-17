@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+/* The :root pseudo-class is equivalent to the HTML type selector */
+:root {
+  font-size: 1em; /* Uses the browser’s default size (16px) */
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  font-size: 0.8rem;
+}
+
+/* ul {
+  font-size: 0.8em;
+} */
+/* Lists within lists should have the same font size as their parent. */
+/* ul ul {
+  font-size: 1em;
+} */
+
+hr {
+  margin-block: 2rem;
+}
+
+.padded {
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.box {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+}
+.box-small {
+  font-size: 12px;
+}
+.box-large {
+  font-size: 18px;
+}
+
+/* Calculates to 1.2 times the element’s inherited font size */
+.slogan {
+  font-size: 1.2em; /* Evaluates to 19.2 px */
+  padding: 1.2em; /* Evaluates to 23.04 px */
+  background-color: lightgray;
+}

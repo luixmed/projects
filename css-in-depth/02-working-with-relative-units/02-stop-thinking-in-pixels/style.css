@@ -1,0 +1,56 @@
+/* Applies to all screens, but is overridden for larger screens */
+:root {
+  font-size: 0.75em;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 50rem;
+  margin-inline: auto;
+  margin-top: 5rem;
+}
+
+hr {
+  margin-block: 1rem;
+  border: 1px solid transparent;
+}
+
+.panel {
+  /* Establishes a predictable font size for the component */
+  font-size: 1rem;
+
+  /* Uses ems for padding and border radius */
+  padding: 1em;
+  border-radius: 0.5em;
+
+  border: 1px solid #999; /* Uses 1 px for a thin border */
+}
+
+/* Compound selector targets elements with both panel and large classes */
+.panel.large {
+  font-size: 1.2rem;
+}
+
+.panel > h2 {
+  /* Uses ems to make other fonts relative to the established parent font size */
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  /* Removes extra space from the panel top; more on this in chapter 3 */
+  margin-top: 0;
+}
+
+/* Applies only to screens 800 px and wider, overriding the original value */
+@media (min-width: 800px) {
+  :root {
+    font-size: 0.875em;
+  }
+}
+
+/* Applies only to screens  1,200 px and larger, overriding both values */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 1em;
+  }
+}
